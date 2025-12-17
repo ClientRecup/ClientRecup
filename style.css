@@ -1,0 +1,16 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+body { background-color:#f7f7f7; color:#333; line-height:1.6; }
+header { background-color:#4CAF50; color:white; padding:40px 20px; text-align:center; }
+header h1 { font-size:2rem; }
+section { max-width:800px; margin:40px auto; background:white; padding:30px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
+section h2 { margin-bottom:15px; color:#4CAF50; }
+section p, section ol { margin-bottom:20px; font-size:1rem; }
+section ol li { margin-bottom:10px; }
+#rdv a { display:inline-block; padding:15px 25px; background-color:#4CAF50; color:white; text-decoration:none; border-radius:5px; font-weight:bold; transition:background 0.3s; }
+#rdv a:hover { background-color:#45a049; }
+footer { text-align:center; padding:20px; margin-top:40px; color:#777; font-size:0.9rem; }
+@media (max-width: 600px) {
+  header h1 { font-size:1.5rem; }
+  section { margin:20px; padding:20px; }
+  #rdv a { padding:12px 20px; }
+}

@@ -1,107 +1,161 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ClientRecup – Récupération automatique de clients</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClientRecup - Ne perdez plus jamais un chantier</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
 
-<header>
-  <div class="header-content">
-    <img src="logo.png" alt="ClientRecup" class="logo">
-    <div class="header-text">
-      <h1>Ne perdez plus de clients quand vous ne répondez pas</h1>
-      <p>Un système automatique qui transforme les appels manqués en rendez-vous</p>
-    </div>
-  </div>
-</header>
+    <header class="hero">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="logo.png" alt="Icone ClientRecup">
+                    Client<span>Recup</span>
+                </div>
+            </nav>
+            <div class="hero-content">
+                <h1>Transformez vos appels manqués en <span>nouveaux clients</span>.</h1>
+                <p>Un système automatique qui envoie un SMS instantané à vos prospects quand vous ne pouvez pas répondre. Ne laissez plus la concurrence récupérer vos clients.</p>
+                <a href="#tarifs" class="btn-main">Voir nos solutions</a>
+            </div>
+        </div>
+    </header>
 
-<section>
-  <div class="box">
-    <h2>Le problème</h2>
-    <p>
-      Quand un client vous appelle et que vous ne répondez pas, il ne rappelle pas.
-      Il va chez un concurrent.
-      <br><br>
-      Avec un système automatique, chaque appel manqué reçoit une réponse immédiate
-      et une proposition de rendez-vous.
-    </p>
-  </div>
+    <section class="problem">
+        <div class="container">
+            <h2>Pourquoi ClientRecup est indispensable ?</h2>
+            <div class="grid">
+                <div class="card-info">
+                    <h3><i class="fas fa-phone-slash"></i> 80%</h3>
+                    <p>des clients n'appellent pas une seconde fois s'ils tombent sur un répondeur.</p>
+                </div>
+                <div class="card-info">
+                    <h3><i class="fas fa-dollar-sign"></i> 150€</h3>
+                    <p>C'est le coût moyen d'un appel manqué pour un artisan. Ne perdez plus d'argent !</p>
+                </div>
+                <div class="card-info">
+                    <h3><i class="fas fa-stopwatch"></i> 2 secondes</h3>
+                    <p>C'est le temps qu'il nous faut pour envoyer un SMS pro à votre prospect.</p>
+                </div>
+            </div>
+            <div class="loss-calculator">
+                <h3>Estimez votre manque à gagner annuel :</h3>
+                <p>Si vous ratez seulement <strong>2 appels par semaine</strong>, c'est jusqu'à <strong>1 200€ par mois</strong> de chiffre d'affaires perdu. Notre solution coûte moins de 3€ par jour et peut vous rapporter bien plus !</p>
+            </div>
+        </div>
+    </section>
 
-  <div class="box">
-    <h2>Comment ça fonctionne</h2>
-    <ul>
-      <li>📞 Un client appelle</li>
-      <li>❌ Vous ne pouvez pas répondre</li>
-      <li>📩 Un message automatique est envoyé</li>
-      <li>📅 Le client prend rendez-vous</li>
-      <li>✅ Vous récupérez le client</li>
-    </ul>
-  </div>
+    <section class="how-it-works">
+        <div class="container">
+            <h2>Comment ça marche ? La simplicité avant tout.</h2>
+            <div class="steps">
+                <div class="step"><span>1</span> <p><strong>Votre client appelle</strong> votre numéro habituel.</p></div>
+                <div class="step"><span>2</span> <p><strong>Vous êtes en intervention ?</strong> Le système détecte l'appel manqué.</p></div>
+                <div class="step"><span>3</span> <p><strong>SMS Pro Instantané :</strong> Votre prospect reçoit un message personnalisé avec votre lien de RDV.</p></div>
+                <div class="step"><span>4</span> <p><strong>Agenda rempli :</strong> Vos rendez-vous sont pris automatiquement, sans que vous ayez à décrocher.</p></div>
+            </div>
+            <div class="sms-example">
+                <h3>Exemple de SMS envoyé :</h3>
+                <div class="sms-bubble">
+                    <p>Bonjour, c'est [Nom de votre entreprise]. Je suis actuellement en intervention. Pour ne pas vous faire attendre, vous pouvez choisir un créneau de rappel ou prendre RDV ici : <a href="#">[Lien de votre agenda]</a>. À très vite !</p>
+                    <span>Envoyé via ClientRecup</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="box">
-    <h2>Nos formules</h2>
+    <section class="faq">
+        <div class="container">
+            <h2>Vos questions fréquentes</h2>
+            <div class="faq-item">
+                <h3><i class="fas fa-question-circle"></i> Est-ce que je dois changer de numéro de téléphone ?</h3>
+                <p>Non ! Notre système est compatible avec votre numéro de téléphone actuel. Nous mettons en place un simple transfert d'appel automatique si vous ne répondez pas, sans perturber votre ligne.</p>
+            </div>
+            <div class="faq-item">
+                <h3><i class="fas fa-question-circle"></i> Comment je reçois les rendez-vous ?</h3>
+                <p>Les rendez-vous sont pris directement via un lien vers votre agenda en ligne (Google Agenda, Calendly, Doctolib, etc.). Vous êtes notifié instantanément et votre agenda se met à jour.</p>
+            </div>
+            <div class="faq-item">
+                <h3><i class="fas fa-question-circle"></i> Que se passe-t-il si je suis déjà au téléphone ?</h3>
+                <p>Notre système est intelligent ! Il détecte si votre ligne est déjà occupée et envoie le SMS de prise de rendez-vous pour que le client ne reste pas sans réponse.</p>
+            </div>
+            <div class="faq-item">
+                <h3><i class="fas fa-question-circle"></i> Puis-je personnaliser le message SMS ?</h3>
+                <p>Absolument ! Tous nos messages sont 100% personnalisables selon votre activité, votre ton et vos besoins spécifiques. Nous le configurons ensemble lors de l'installation.</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="offers">
+    <section id="tarifs" class="pricing">
+        <div class="container">
+            <h2>Nos Formules</h2>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Formule Essentielle</h3>
+                    <div class="price">69€<span>/mois</span></div>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Réponse SMS instantanée</li>
+                        <li><i class="fas fa-check-circle"></i> Lien de prise de RDV (Calendly...)</li>
+                        <li><i class="fas fa-check-circle"></i> Numéro professionnel dédié (ou votre actuel)</li>
+                        <li><i class="fas fa-check-circle"></i> Personnalisation du message</li>
+                        <li><i class="fas fa-check-circle"></i> Tableau de bord des appels/SMS</li>
+                        <li><i class="fas fa-check-circle"></i> Support par email</li>
+                    </ul>
+                    <p class="setup">Installation : 99€ (une seule fois)</p>
+                    <a href="https://Calendly.com/clientrecup" class="btn-secondary">Prendre RDV</a>
+                </div>
 
-      <div class="offer">
-        <h3>Formule Essentielle</h3>
-        <div class="price">49 € / mois</div>
+                <div class="price-card featured">
+                    <div class="badge">LE CHOIX DES PROS</div>
+                    <h3>Formule Business</h3>
+                    <div class="price">129€<span>/mois</span></div>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> <strong>Tout de l'offre Essentielle</strong></li>
+                        <li><i class="fas fa-check-circle"></i> Relances automatiques SMS (si pas de RDV)</li>
+                        <li><i class="fas fa-check-circle"></i> Rappels de RDV (pour éviter les "lapins")</li>
+                        <li><i class="fas fa-check-circle"></i> Collecte d'avis Google automatique</li>
+                        <li><i class="fas fa-check-circle"></i> Qualification client par SMS (avant RDV)</li>
+                        <li><i class="fas fa-check-circle"></i> Support prioritaire par téléphone/email</li>
+                    </ul>
+                    <p class="setup">Installation : 199€ (une seule fois)</p>
+                    <a href="https://Calendly.com/clientrecup" class="btn-main">Prendre RDV</a>
+                </div>
+            </div>
+            <p class="option-num">💡 <strong>Option :</strong> La connexion à votre numéro de téléphone actuel est incluse dans l'installation. Nous nous occupons de tout !</p>
+        </div>
+    </section>
 
-        <ul>
-          <li>✔ Numéro professionnel dédié</li>
-          <li>✔ Appels entrants vers votre entreprise</li>
-          <li>✔ SMS automatique après appel manqué</li>
-          <li>✔ Lien de prise de rendez-vous</li>
-          <li>✔ Message standard personnalisé</li>
-          <li>✔ Maintenance du système</li>
-        </ul>
-<p><strong>Installation :</strong> 79 € (une seule fois)</p>
+    <section class="trusted-by">
+        <div class="container">
+            <h2>Nos solutions sont adaptées aux professionnels de :</h2>
+            <div class="professions">
+                <span><i class="fas fa-hard-hat"></i> Plombiers</span>
+                <span><i class="fas fa-bolt"></i> Électriciens</span>
+                <span><i class="fas fa-user-tie"></i> Professions Libérales</span>
+                <span><i class="fas fa-cut"></i> Salons de coiffure</span>
+                <span><i class="fas fa-key"></i> Serruriers</span>
+                <span><i class="fas fa-car-alt"></i> Garages / Mécaniciens</span>
+                <span><i class="fas fa-paint-roller"></i> Peintres</span>
+                <span><i class="fas fa-tree"></i> Paysagistes</span>
+            </div>
+        </div>
+    </section>
 
-        <a class="cta" href="https://calendly.com/clientrecup" target="_blank">
-          Prendre RDV
-        </a>
-      </div>
-
-      <div class="offer recommended">
-        <h3>Formule Pro</h3>
-        <div class="price">79 € / mois</div>
-
-        <ul>
-          <li>✔ Tout ce qui est inclus dans la formule Essentielle</li>
-          <li>✔ Messages 100 % personnalisés selon votre activité</li>
-          <li>✔ Rappels automatiques avant les rendez-vous</li>
-          <li>✔ Ajustements sur mesure</li>
-          <li>✔ Statistiques simples (appels / SMS / RDV)</li>
-          <li>✔ Support prioritaire</li>
-        </ul>
-
-        <p><strong>Installation :</strong> 99 € (une seule fois)</p>
-
-        <a class="cta" href="https://calendly.com/clientrecup" target="_blank">
-          Prendre RDV
-        </a>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="box">
-    <h2>Sans engagement</h2>
-    <p>
-      Nos formules sont sans engagement.
-      Vous pouvez arrêter quand vous le souhaitez.
-    </p>
-  </div>
-</section>
-
-<footer>
-  © 2025 ClientRecup – Tous droits réservés
-</footer>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 ClientRecup - Tous droits réservés. Sans engagement. Annulez quand vous voulez.</p>
+            <div class="footer-badge">
+                <i class="fas fa-rocket"></i> Installation Express en 24h !
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
+
 

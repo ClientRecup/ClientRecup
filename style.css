@@ -142,8 +142,20 @@ section {
 
 .card-info:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(0,0,0,0.15); }
 
-.card-info h3 { font-size: 2.8rem; color: var(--primary); margin-bottom: 15px; display: flex; align-items: center; justify-content: center; gap: 10px;}
-.card-info h3 .fas { font-size: 2.2rem; }
+.card-info h3 { 
+    font-size: 2.1rem; 
+    color: var(--primary); 
+    margin-bottom: 15px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px;
+    white-space: nowrap; 
+}
+
+.card-info h3 .fas { 
+    font-size: 1.8rem; 
+}
 
 .card-info p { font-size: 1.1rem; color: #555; }
 
@@ -424,3 +436,4 @@ footer p {
     .faq-item p { padding-left: 0; }
     .professions span { font-size: 0.9rem; padding: 12px 20px; }
 }
+

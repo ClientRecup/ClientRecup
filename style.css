@@ -1,12 +1,11 @@
 :root {
-    --primary: #27ae60; /* Vert pour la croissance */
-    --dark: #2c3e50;    /* Bleu marine pour le sérieux */
-    --light: #f4f7f6;   /* Gris clair pour le fond */
+    --primary: #27ae60;
+    --dark: #2c3e50;
+    --light: #f4f7f6;
     --white: #ffffff;
-    --accent: #e67e22; /* Orange pour les mises en avant */
+    --accent: #e67e22;
 }
 
-/* Base */
 * {
     margin: 0;
     padding: 0;
@@ -18,12 +17,14 @@ body {
     line-height: 1.6;
     color: var(--dark);
     background-color: var(--light);
+    overflow-x: hidden;
 }
 
 .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
+    width: 100%;
 }
 
 h2 {
@@ -33,30 +34,43 @@ h2 {
     color: var(--dark);
 }
 
-/* Hero Section */
 .hero {
-    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('https://images.unsplash.com/photo-1510511459019-5da40973d657?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover fixed; /* Image de fond artisan */
+    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('https://images.unsplash.com/photo-1510511459019-5da40973d657?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover fixed;
     color: var(--white);
     padding: 100px 0;
     text-align: center;
-    display: flex; /* Pour centrer le contenu verticalement si besoin */
+    display: flex;
     align-items: center;
-    min-height: 60vh; /* Pour qu'il prenne de la hauteur */
+    min-height: 60vh;
 }
 
 nav {
     display: flex;
-    justify-content: center; /* Centrer le logo */
-    padding-bottom: 30px;
+    justify-content: center;
+    padding: 30px 0;
+    width: 100%;
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     font-size: 2.5rem;
     font-weight: bold;
-    color: var(--white); /* Couleur du texte du logo */
+    color: var(--white);
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+    display: block;
 }
 
 .logo span { color: var(--primary); }
+
+.hero-content {
+    width: 100%;
+}
 
 .hero-content h1 {
     font-size: 3.5rem;
@@ -74,7 +88,6 @@ nav {
     margin-right: auto;
 }
 
-/* Boutons */
 .btn-main {
     background: var(--primary);
     color: var(--white);
@@ -103,7 +116,6 @@ nav {
 
 .btn-secondary:hover { background-color: var(--primary); color: var(--white); transform: translateY(-3px); }
 
-/* Sections générales */
 section {
     padding: 80px 0;
 }
@@ -136,7 +148,7 @@ section {
 .card-info p { font-size: 1.1rem; color: #555; }
 
 .loss-calculator {
-    background-color: #ffe0b2; /* Orange très clair */
+    background-color: #ffe0b2;
     border-left: 5px solid var(--accent);
     padding: 30px;
     margin-top: 60px;
@@ -161,20 +173,19 @@ section {
     font-weight: bold;
 }
 
-/* How It Works */
 .how-it-works { background: var(--white); }
 
 .steps {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    max-width: 800px; /* On réduit un peu la largeur pour que ce soit compact */
-    margin: 50px auto 0; /* Centré */
+    max-width: 800px;
+    margin: 50px auto 0;
 }
 
 .step {
     display: flex;
-    align-items: flex-start; /* Alignement en haut pour le texte */
+    align-items: flex-start;
     gap: 15px;
     padding: 20px;
     background: var(--light);
@@ -185,7 +196,7 @@ section {
 .step span {
     background: var(--primary);
     color: var(--white);
-    min-width: 40px; /* Taille fixe */
+    min-width: 40px;
     height: 40px;
     display: flex;
     align-items: center;
@@ -193,7 +204,7 @@ section {
     border-radius: 50%;
     font-weight: bold;
     font-size: 1.2rem;
-    flex-shrink: 0; /* Empêche le rétrécissement */
+    flex-shrink: 0;
 }
 
 .step p {
@@ -202,7 +213,6 @@ section {
 }
 
 .step strong { color: var(--primary); }
-
 
 .sms-example {
     margin-top: 80px;
@@ -216,7 +226,7 @@ section {
 }
 
 .sms-bubble {
-    background-color: #e0f7fa; /* Couleur de bulle de SMS */
+    background-color: #e0f7fa;
     border-radius: 20px 20px 20px 5px;
     padding: 20px;
     max-width: 450px;
@@ -245,8 +255,6 @@ section {
     margin-top: 10px;
 }
 
-
-/* FAQ */
 .faq { background: var(--light); }
 
 .faq-item {
@@ -264,18 +272,16 @@ section {
     display: flex;
     align-items: center;
     gap: 10px;
-    cursor: pointer; /* Indique que c'est cliquable si tu veux faire un accordéon plus tard */
+    cursor: pointer;
 }
 .faq-item h3 .fas { color: var(--primary); font-size: 1.5rem;}
 
 .faq-item p {
     font-size: 1rem;
     color: #555;
-    padding-left: 30px; /* Pour aligner avec le texte après l'icône */
+    padding-left: 30px;
 }
 
-
-/* Pricing */
 .pricing { padding: 80px 0; background: var(--white); }
 
 .pricing-grid {
@@ -283,18 +289,20 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 50px;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 .price-card {
     background: var(--white);
     padding: 40px;
     border-radius: 15px;
-    flex: 1;
     text-align: center;
     position: relative;
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
     transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .price-card:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(0,0,0,0.15); }
@@ -334,14 +342,13 @@ ul li .fas { color: var(--primary); }
     margin-top: 60px;
     font-size: 1.1rem;
     color: var(--dark);
-    background-color: #d4edda; /* Vert très clair */
+    background-color: #d4edda;
     border: 1px solid #c3e6cb;
     padding: 20px;
     border-radius: 8px;
 }
 .option-num strong { color: var(--primary); }
 
-/* Trusted By (Professions) */
 .trusted-by { background: var(--light); padding: 60px 0; }
 .professions {
     display: flex;
@@ -365,7 +372,6 @@ ul li .fas { color: var(--primary); }
 }
 .professions span .fas { color: var(--primary); }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 50px 0;
@@ -385,7 +391,7 @@ footer p {
     border-radius: 25px;
     font-weight: bold;
     font-size: 1rem;
-    display: inline-flex; /* Pour centrer le badge */
+    display: inline-flex;
     align-items: center;
     gap: 10px;
     margin-top: 20px;
@@ -393,8 +399,6 @@ footer p {
 }
 .footer-badge .fas { font-size: 1.2rem; }
 
-
-/* Media Queries for Responsiveness */
 @media (max-width: 900px) {
     .hero-content h1 { font-size: 2.8rem; }
     .hero-content p { font-size: 1.1rem; }
@@ -402,57 +406,21 @@ footer p {
     .card-info h3 { font-size: 2.2rem; }
     .price { font-size: 3rem; }
     .pricing-grid { grid-template-columns: 1fr; }
-    .price-card.featured { transform: scale(1); } /* Retirer le scale sur mobile */
+    .price-card.featured { transform: scale(1); }
 }
 
 @media (max-width: 600px) {
-    .hero { padding: 80px 0 60px; }
-    .hero-content h1 { font-size: 2.2rem; }
+    .hero { padding: 60px 0; }
+    .logo { font-size: 1.8rem; justify-content: center; flex-wrap: wrap; }
+    .logo img { height: 60px; }
+    .hero-content h1 { font-size: 1.8rem; }
     .hero-content p { font-size: 1rem; }
-    h2 { font-size: 1.8rem; }
+    h2 { font-size: 1.6rem; }
     .grid { grid-template-columns: 1fr; }
     .steps { grid-template-columns: 1fr; }
-    .step { flex-direction: column; text-align: center; }
+    .step { flex-direction: column; text-align: center; align-items: center; }
     .step span { margin-bottom: 10px; }
-    .sms-bubble { max-width: 90%; }
+    .sms-bubble { max-width: 95%; }
     .faq-item p { padding-left: 0; }
     .professions span { font-size: 0.9rem; padding: 12px 20px; }
-}
-
-.logo {
-    display: flex;
-    align-items: center; /* Aligne l'image et le texte verticalement */
-    gap: 4px; /* Espace entre l'image et le texte */
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: var(--white);
-}
-
-.logo img {
-    height: 100px; 
-    width: auto;
-}
-
-.logo span {
-    color: var(--primary);
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    padding: 30px 0;
-}
-
-.pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
-    align-items: stretch; /* Les cartes feront toutes la même taille verticalement */
-}
-
-.price-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Aligne le bouton toujours en bas de la carte */
 }

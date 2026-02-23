@@ -166,9 +166,10 @@ section {
 
 .steps {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
     gap: 30px;
-    margin-top: 50px;
+    max-width: 800px; /* On réduit un peu la largeur pour que ce soit compact */
+    margin: 50px auto 0; /* Centré */
 }
 
 .step {
@@ -421,14 +422,14 @@ footer p {
 .logo {
     display: flex;
     align-items: center; /* Aligne l'image et le texte verticalement */
-    gap: 15px; /* Espace entre l'image et le texte */
+    gap: 4px; /* Espace entre l'image et le texte */
     font-size: 2.5rem;
     font-weight: bold;
     color: var(--white);
 }
 
 .logo img {
-    height: 60px; 
+    height: 100px; 
     width: auto;
 }
 
@@ -442,7 +443,16 @@ nav {
     padding: 30px 0;
 }
 
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+    align-items: stretch; /* Les cartes feront toutes la même taille verticalement */
+}
 
-
-
-
+.price-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Aligne le bouton toujours en bas de la carte */
+}
